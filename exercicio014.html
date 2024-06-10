@@ -1,0 +1,50 @@
+<script>
+    /* melhorar retirando um dos if*/
+
+    var nome,nota1,nota2;
+    
+
+        function CalcularMedia(nota1, nota2){
+            return (parseFloat(nota1)+ parseFFloat(nota2))/2;
+        }
+        function exibirResultado(media){
+            var resultado;
+            if (media >= 6.5 ){
+            document.write( "aprovado");
+        }else {
+            document.write( "reprovado");
+        }
+            return resultado;
+        }
+
+        function verificarErro(valor){
+            alert("A nota digitada nao e um numero");
+        }
+
+
+        nome = prompt("digite seu nome ?", "");
+        
+    do {
+        nota1= parseFloat(prompt("informe a nota1")) ;
+
+        verificarErro(nota1);
+        
+
+    }  while (Number.isNaN(nota1));
+
+
+    do {
+        nota2= parseFloat(prompt("informe a nota2")) ;
+        verificarErro(nota2);
+       
+
+
+    }  while (Number.isNaN(nota2));
+    
+    
+      media = calcularMedia(nota1,nota2);
+      documet.write(exibirResultado(media));
+ 
+    
+
+    </script>
