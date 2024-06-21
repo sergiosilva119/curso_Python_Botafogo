@@ -1,0 +1,61 @@
+<script>
+    
+
+    var nome,nota1,nota2;
+    var media_aprovacao = 6.5;
+    var media_aluno ;
+    var resultado ;
+    var aluno;
+
+        function CalcularMedia(nota1, nota2){
+            return (parseFloat(nota1)+ parseFFloat(nota2))/2;
+        }
+        function exibirResultado(media){
+            var resultado;
+            if (media >= 6.5 ){
+            document.write( "aprovado");
+        }else {
+            document.write( "reprovado");
+        }
+            return resultado;
+
+
+        }
+
+        nome = prompt("digite seu nome ?", "");
+        nota1= prompt("informe a nota1") ;
+        nota2 = prompt("informe a nota2");
+        media_aluno = (nota1 + nota2)/2;
+
+        if (media > 6.5 ){
+            document.write( "aprovado");
+        }else {
+            document.write( "reprovado");
+        }
+
+
+    do {
+        nome = prompt("digite seu nome ?", "");
+        nota1= prompt("informe a nota1") ;
+        nota2 = prompt("informe a nota2");
+
+
+    }  while ( aluno != null);
+     
+        nota1= parseFloat (nota1);
+        nota2 =parseFloat (nota2);
+        media_aluno = (nota1 + nota2)/2;
+
+    if(media_aluno >= media_aprovacao){
+        resultado = media_aluno ;
+        alert(nome + " tem media " + resultado + " aprovado ");
+    }
+    else(media_aluno < media_aprovacao);
+    {
+        resultado = media_aluno ;
+        alert(nome + " tem media " + resultado + " reprovado");
+    }
+ 
+    
+
+    </script>
