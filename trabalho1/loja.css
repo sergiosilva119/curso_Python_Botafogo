@@ -1,0 +1,18 @@
+#barra{
+background-color: gray;
+height: 10px;
+}
+
+#conteudo{
+    display:flex;
+background-color: burlywood;
+height: 70px;
+text-align: center;
+justify-content:center;
+}
+
+#rodape{
+background-color: cadetblue;
+height: 10px;
+
+}
