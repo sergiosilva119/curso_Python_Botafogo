@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <META charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title> fonte -CSS</title>
+    <style>
+        h1{
+          color:blue;
+          font-family: verdana;
+          font-size: 300%;
+        }
+        p{
+          color: red;
+          font-family: Courier;
+          font-size: 160%;
+        }
+
+          
+          p.one {border-style:dotted;
+                  border-width: 5px;
+                }
+          p.solid {
+            border-style: solid;
+            border-width: 10px;
+            border-color: red;
+           }
+          p.mix {
+            border-style: dotted dashed solid double; 
+          }
+          p.alter{
+            border-style: solid;
+            border-bottom-style: solid
+          }
+          .normal{
+            border:2px solid red;
+
+            .r1{
+              border:2px solid red;
+              border-radius:5px;
+
+            }
+            .r2{
+              border:2px solid red;
+              border-radius:8px;
+            }
+            .r3{
+              border:2px solid red;
+              border-radius:12px;
+            }
+          }
+        }
+    </style>
+    
+      
+  </head>
+
+
+  <body >
+    <h1>Primeiro paragrafo</h1>
+      <p>outro formato</p>  
+     <h2>  propriedades border-style</h2>
+      <p class="one">,borda do tipo dotted.</p>
+      <p class="solid">,borda do tipo solid.</p>
+      <p class="mix">,borda do tipo mix.</p>
+   <h3>propriedade radius</h3>
+      <p class="normal">,borda normal.</p>
+      <p class="r1">,borda arredondada</p>
+      <p class="r2">,borda um pouco mais arredondada.</p>
+      <p class="r3">,borda totakmente arredondada.</p>
+
+
+
+
+
+
+    </body>
+
+    
+
+</html>
